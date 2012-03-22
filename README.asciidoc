@@ -1,0 +1,64 @@
+SVN Branching Language
+======================
+Andrew Sayers <andrew-sbl@pileofstuff.org>
+
+The Subversion version control system represents history (branches,
+merges and tags) through convention as much as implementation.  For
+example, it is conventional to call "trunk/foo" a branch "trunk" with
+a directory "foo".  But it is just as valid to say that "trunk/foo" is
+a branch name (presumably "trunk/bar" is another project in the same
+repository), or that the whole repository is a branch and "trunk/foo"
+is a directory within it.
+
+The goal of this project is to provide a set of resources usable by
+everybody to unambiguously describe SVN history.  This includes a
+description language and a library of examples with discussion.
+
+This project defines a simple language for explicitly defining SVN
+history.  The goals of the language are:
+
+- to provide an interchange format for programs operating on SVN
+  history.  For example, a script that converted SVN history to
+  another version control system might use this format to describe the
+  SVN history.
+- to provide a common language to developers wanting to discuss SVN
+  history.  For example, a mailing list discussion could use this
+  format to describe the idealised steps an SVN user was trying to
+  perform.
+
+This project also includes a library of examples using the language.
+The goals of the test cases are:
+
+- to provide a clearinghouse for unusual SVN history constructs
+- to provide a test suite for projects attempting to extract history
+  from SVN repositories
+
+Contributing
+------------
+
+Contributions are always welcome, and should be sent either to Andrew
+Sayers <andrew-sbl@pileofstuff.org> or to the Git mailing list
+<git@vger.kernel.org>.
+
+Authors are particularly encouraged to provide more examples for the
+library - everyone that works in this area discovers a different set
+of edge cases, and we can only hope to write better software by
+sharing knowledge about those edge cases.
+
+The ideal way of contributing to the library is to provide a new test
+file, but just explaining a problem you had will often be enough.
+
+Licensing
+---------
+
+Since the goal of this project is to provide resources usable by
+everybody, the licenses used are:
+
+Language.txt and README.txt: Creative Commons Attribution 3.0 Unported License.
+The full license is available here: http://creativecommons.org/licenses/by/3.0/legalcode
+A human-readable summary is available here: http://creativecommons.org/licenses/by/3.0/
+
+Everything else: MIT license - http://www.opensource.org/licenses/MIT
+
+The MIT license is also accessible as MIT-LICENSE.txt in this
+directory.
