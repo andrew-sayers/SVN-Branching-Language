@@ -31,7 +31,7 @@ config() {
 }
 
 expect_representation "Delayed standard layout" < <<EOF
-This is a version 0.1 SVN Branch Description file
+This is a version 0.1 SVN Branching Language file
 Body:
 In r1, create branch "trunk"
 In r2, create branch "branches/sub_project" as "sub_project" from "trunk"

@@ -22,7 +22,7 @@ config() {
 }
 
 expect_fatal_error "branch already exists" < <<EOF
-This is a version 0.1 SVN Branch Description file
+This is a version 0.1 SVN Branching Language file
 Body:
 In r2, create branch "trunk" as "I_am_trunk"
 In r3, deactivate "trunk"
@@ -31,7 +31,7 @@ EOF
 
 
 expect_fatal_error "no such tag" < <<EOF
-This is a version 0.1 SVN Branch Description file
+This is a version 0.1 SVN Branching Language file
 Body:
 In r2, create branch "trunk" as "I_am_trunk"
 In r3, deactivate "trunk"
@@ -41,7 +41,7 @@ EOF
 
 
 expect_ok "branch deleted then recreated" < <<EOF
-This is a version 0.1 SVN Branch Description file
+This is a version 0.1 SVN Branching Language file
 Body:
 In r2, create branch "trunk" as "I_am_trunk"
 In r3, deactivate "trunk"
@@ -51,7 +51,7 @@ EOF
 
 
 expect_ok "different branch name" < <<EOF
-This is a version 0.1 SVN Branch Description file
+This is a version 0.1 SVN Branching Language file
 Body:
 In r2, create branch "trunk" as "I_am_trunk"
 In r3, deactivate "trunk"
@@ -60,7 +60,7 @@ EOF
 
 
 expect_ok "tag instead of branch" < <<EOF
-This is a version 0.1 SVN Branch Description file
+This is a version 0.1 SVN Branching Language file
 Body:
 In r2, create branch "trunk" as "I_am_trunk"
 In r3, deactivate "trunk"
